@@ -1,0 +1,142 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box
+}
+html{
+  font-family:"04b03", monospace;
+  scroll-behavior:smooth;
+font-size:12px;
+}
+body{
+  background:black;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  min-height:100vh;
+  min-height:100dvh;
+  color:gray;
+  background-size:64px;
+  background-repeat:repeat;
+  gap:1rem;
+  padding:1rem;
+  overflow:auto;
+  padding-inline:1rem;
+
+}
+
+@media (min-width:640px) {
+  html {
+    font-size: 12px; 
+  }
+
+}
+@media (min-width:768px) {
+  html {
+    font-size: 18px; 
+  }  body{
+
+  padding-inline:25%;
+  }
+}@media (min-width:1024px) {
+  html {
+    font-size: 20px; 
+  }
+  body{
+  padding-inline:20%;
+  }
+}
+@media (min-width:1280px) {
+  html {
+    font-size: 24px; 
+  }
+  body{
+  padding-inline:20%;
+  }
+}
+
+
+a{
+  appearance:none;
+  color:gray;
+  text-decoration:none;
+  font-size:1em;
+  transition: 300ms all;
+}
+a[locked]{
+  text-decoration:line-through;
+  color:red;
+  cursor:not-allowed;
+}
+a:hover{
+  text-decoration:underline;
+  cursor:pointer;
+}
+.text-highlight{
+  color:crimson;
+}
+
+.full-height-section{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  gap:0.5rem;
+  min-height:100vh;
+  max-height:101230230230023vh;
+}
+.text-hint{
+  color: rgb(70,70,70);
+}
+.text-center{
+  text-align:center;
+}
+.content-insert{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:0.5rem;
+}
+.social-button{
+  cursor:pointer;
+  aspect-ratio:1/1;
+  image-rendering:pixelated;
+}
+.social-buttons-container{
+  display:flex;
+  gap:1rem;
+  margin-top:1rem;
+}
+.social-container{
+  display:flex;
+  gap:0.5rem;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  font-size:0.85rem;
+}
+.playlist{
+  margin-top:0.5rem;
+  width:100%;
+  white-space:pre-wrap;
+}
+#page-content{
+  padding-top:10%;
+
+}
+.container-row{
+  gap:1rem;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.container-col{
+  gap:1rem;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column
+}

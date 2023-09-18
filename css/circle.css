@@ -1,0 +1,7 @@
+.arrange-circle{
+  position:absolute;
+}
+.arrange-circle>*{
+  position:absolute;
+  white-space:nowrap;
+}
