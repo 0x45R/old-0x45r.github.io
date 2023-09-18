@@ -23,7 +23,7 @@ const setCircle = (circle) => {
   let lastSelected = children[0];
   let currentOffset = 0
 
-  const selectedOption = async (index) => {
+  const selectedOption = (index) => {
     lastSelected.classList.remove("text-highlight")
     children[index].classList.add("text-highlight")
     updateCircle(index*Math.PI/children.length*2)
@@ -32,8 +32,8 @@ const setCircle = (circle) => {
     currentOffset = index
 
     pageIdentifier.innerText = children[index].innerText
-    console.log(routes[index].content_url)
-    const request = await fetch(routes[index].content_url)
+ 
+    fetch(routes[index].content_url)
     .then((response)=>response.text())
     .then((text)=>{
         contentInsert.innerHTML = text;

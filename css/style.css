@@ -4,7 +4,7 @@
   box-sizing:border-box
 }
 html{
-  font-family:"04b03", monospace;
+  font-family:"04b03", sans-serif;
   scroll-behavior:smooth;
 font-size:12px;
 }
@@ -84,7 +84,6 @@ a:hover{
   flex-direction:column;
   gap:0.5rem;
   min-height:100vh;
-  max-height:101230230230023vh;
 }
 .text-hint{
   color: rgb(70,70,70);
@@ -139,4 +138,12 @@ a:hover{
   justify-content:center;
   align-items:center;
   flex-direction:column
+}
+.main-title{
+  max-width:10rem;
+  height:4rem;
+}
+.text-decoration-none:hover{
+  text-decoration:none;
+  color:gray;
 }
